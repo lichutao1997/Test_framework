@@ -1,16 +1,40 @@
-ERROR - framework - 2020-03-02 20:24:11,100 - 发送邮件失败，无法连接到SMTP服务器，检查网络以及SMTP服务器:[WinError 10061] 由于目标计算机积极拒绝，无法连接。
-Traceback (most recent call last):
-  File "E:\Lichutao\PycharmProjects\Test_framework\utils\mail.py", line 57, in send
-    SMTP_server = smtplib.SMTP(self.server) #连接server
-  File "E:\Lichutao\aasoftware\Python37\lib\smtplib.py", line 251, in __init__
-    (code, msg) = self.connect(host, port)
-  File "E:\Lichutao\aasoftware\Python37\lib\smtplib.py", line 336, in connect
-    self.sock = self._get_socket(host, port, self.timeout)
-  File "E:\Lichutao\aasoftware\Python37\lib\smtplib.py", line 307, in _get_socket
-    self.source_address)
-  File "E:\Lichutao\aasoftware\Python37\lib\socket.py", line 727, in create_connection
-    raise err
-  File "E:\Lichutao\aasoftware\Python37\lib\socket.py", line 716, in create_connection
-    sock.connect(sa)
-ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
-INFO - framework - 2020-03-02 20:37:21,374 - 发送邮件"百度测试报告"成功，收件人：1501141246@qq.com,如果没有收到邮件，请检查垃圾箱，同时检查收件人地址是否正确
+INFO - framework - 2020-03-08 16:24:20,211 - Python selenium —— selenium与自动化测试成神之路_灰蓝-CSDN博客
+INFO - framework - 2020-03-08 16:24:20,233 - selenium 学习网站 - 灰蓝
+INFO - framework - 2020-03-08 16:24:20,250 - Python Selenium自动化测试详解 - 灰蓝(只有想不通的人,没有走不...
+INFO - framework - 2020-03-08 16:24:20,265 - ...selenium —— 教你在Windows上搭建Python+Selenium环境 - 灰蓝
+INFO - framework - 2020-03-08 16:24:20,280 - 灰蓝_huilan_same_CSDN博客-Python Selenium自动化测试详解...
+INFO - framework - 2020-03-08 16:24:20,301 - selenium之 时间日期控件的处理 - 灰蓝 - CSDN博客
+INFO - framework - 2020-03-08 16:24:20,317 - ...三种等待方式解读_python,selenium,显性等待_灰蓝-CSDN博客...
+INFO - framework - 2020-03-08 16:24:20,334 - selenium之 搞定checkbox、radiobox - 灰蓝 - CSDN博客
+INFO - framework - 2020-03-08 16:24:20,351 - selenium之 下拉选择框Select - 灰蓝 - CSDN博客
+INFO - framework - 2020-03-08 16:24:20,366 - selenium之 浏览器导航栏的三个按钮(back、forward、re..._CSDN博客
+INFO - framework - 2020-03-08 16:24:28,800 - Python网络爬虫(selenium基本使用) - WiseAdministrator - 博客园
+INFO - framework - 2020-03-08 16:24:28,826 - Selenium with Python — Selenium Python Bindings 2...
+INFO - framework - 2020-03-08 16:24:28,864 - selenium python client - selenium · PyPI
+INFO - framework - 2020-03-08 16:24:28,881 - Python+Selenium基础入门及实践 - 简书
+INFO - framework - 2020-03-08 16:24:28,896 - python之Selenium库的使用 - 小学弟- - 博客园
+INFO - framework - 2020-03-08 16:24:28,912 - 基于Python +Selenium的爬虫详解_python学习者的博客-CSDN博客
+INFO - framework - 2020-03-08 16:24:28,928 - selenium-python中文文档
+INFO - framework - 2020-03-08 16:24:28,943 - Python中Selenium模块的使用_谢公子的博客-CSDN博客
+INFO - framework - 2020-03-08 16:24:28,960 - Python+selenium初学者常见问题_python
+INFO - framework - 2020-03-08 16:24:28,976 - python+selenium使用 - 简书
+INFO - framework - 2020-03-08 17:47:34,354 - Python selenium —— selenium与自动化测试成神之路_灰蓝-CSDN博客
+INFO - framework - 2020-03-08 17:47:34,370 - selenium 学习网站 - 灰蓝
+INFO - framework - 2020-03-08 17:47:34,385 - Python Selenium自动化测试详解 - 灰蓝(只有想不通的人,没有走不...
+INFO - framework - 2020-03-08 17:47:34,402 - ...selenium —— 教你在Windows上搭建Python+Selenium环境 - 灰蓝
+INFO - framework - 2020-03-08 17:47:34,418 - ...三种等待方式解读_python,selenium,显性等待_灰蓝-CSDN博客...
+INFO - framework - 2020-03-08 17:47:34,433 - 灰蓝_huilan_same_CSDN博客-Python Selenium自动化测试详解...
+INFO - framework - 2020-03-08 17:47:34,447 - selenium之 时间日期控件的处理 - 灰蓝 - CSDN博客
+INFO - framework - 2020-03-08 17:47:34,463 - Python selenium —— 将你的自动化脚本打包成一个exe..._CSDN博客
+INFO - framework - 2020-03-08 17:47:34,477 - Python selenium —— 父子、兄弟、相邻节点定位方式详..._CSDN博客
+INFO - framework - 2020-03-08 17:47:34,493 - selenium之 定位以及切换frame(iframe)_Python_灰蓝-CSDN博客
+INFO - framework - 2020-03-08 17:47:43,383 - Python网络爬虫(selenium基本使用) - WiseAdministrator - 博客园
+INFO - framework - 2020-03-08 17:47:43,399 - Selenium with Python — Selenium Python Bindings 2...
+INFO - framework - 2020-03-08 17:47:43,415 - python之Selenium库的使用 - 小学弟- - 博客园
+INFO - framework - 2020-03-08 17:47:43,431 - 基于Python +Selenium的爬虫详解_python学习者的博客-CSDN博客
+INFO - framework - 2020-03-08 17:47:43,446 - selenium-python中文文档
+INFO - framework - 2020-03-08 17:47:43,460 - python中selenium使用 - One of them的博客_CSDN博客
+INFO - framework - 2020-03-08 17:47:43,476 - Python+Selenium基础入门及实践 - 简书
+INFO - framework - 2020-03-08 17:47:43,490 - Python爬虫基础练习(十三)Selenium简单案例 - 知乎
+INFO - framework - 2020-03-08 17:47:43,505 - selenium python client - selenium · PyPI
+INFO - framework - 2020-03-08 17:47:43,521 - Selenium with Python中文翻译文档 — Selenium-Python中文文档 2...
