@@ -1,4 +1,4 @@
-import os
+'''import os
 import logging
 from logging import handlers
 import utils.config
@@ -46,7 +46,12 @@ class Log():
 
 logger = Log().get_logger()
 
-####
+####'''
+
+from selenium import webdriver
+from utils.config import DRIVER_PATH
+driver_path = DRIVER_PATH + '\chromedriver.exe'
+
 
 
 

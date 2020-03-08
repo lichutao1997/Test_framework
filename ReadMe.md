@@ -26,13 +26,15 @@
     report.html                  #存放html格式的测试报告
 ######六、test目录
 
-    存放测试用例
+    |--case（用例文件）
+    |--common（跟项目、页面无关的封装）
+    |--page（页面）
+    |--suite（测试套件，用来组织用例）
 ######七、utils
-
-    #存放公关方法
-    config.py                     #存放路径，读取config.yml方法
-    file_reader.py                #读取data
-    HTMLTestRunner.py             #用于输出测试报告
-    log.py                        #日志配置文件
-    mail.py                       #用于邮箱发送测试报告
+    
+    |--config.py                     #存放路径，读取config.yml方法
+    |--file_reader.py                #读取data
+    |--HTMLTestRunner.py             #用于输出测试报告
+    |--log.py                        #日志配置文件
+    |--mail.py                       #用于邮箱发送测试报告
     

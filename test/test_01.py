@@ -7,6 +7,7 @@ from utils.log import logger
 from utils.file_reader import ExcelReader
 from utils.HTMLTestRunner_PY3 import HTMLTestRunner
 from utils.mail import Email
+from test.page.baidu_result_page import BaiDuMainPage,BaiDuResultPage
 
 
 class TestBaiDu(unittest.TestCase):
@@ -19,11 +20,11 @@ class TestBaiDu(unittest.TestCase):
 
 
     def sub_setUp(self):
-        self.driver = webdriver.Chrome()
-        self.driver.get(self.URL)
+        #初始页面是main page,传入浏览器类型打开浏览器
+        self.page = BaiDuMainPage(browser_type='chrome').get(self.URL,maximize_window=False)
 
     def sub_tearDown(self):
-        self.driver.quit()
+        self.page.quit()
 
     def test_search(self):
         #从表格中读取数据
@@ -32,10 +33,10 @@ class TestBaiDu(unittest.TestCase):
         for d in datas:
             with self.subTest(data = d):
                 self.sub_setUp()
-                self.driver.find_element(*self.locator_kw).send_keys(d['search'])
-                self.driver.find_element(*self.locator_su).click()
+                self.page.search(d['search'])
                 time.sleep(2)
-                links = self.driver.find_elements(*self.locator_result)
+                self.page = BaiDuResultPage(self.page) #页面跳转到result page
+                links = self.page.result_links
                 for link in links:
                     logger.info(link.text)
                 self.sub_tearDown()
@@ -43,7 +44,6 @@ class TestBaiDu(unittest.TestCase):
 
 if __name__ == '__main__':
     report_file = REPORT_PATH + '\\report.html'
-
     testsuite = unittest.TestSuite()
 
     #把测试用例集传入到testsuite中
